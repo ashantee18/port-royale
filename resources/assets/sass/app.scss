@@ -1,0 +1,27 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/fonts/Simple-Line-Icons.eot");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/fonts/Simple-Line-Icons.svg");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/fonts/Simple-Line-Icons.ttf");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/fonts/Simple-Line-Icons.woff");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/fonts/Simple-Line-Icons.woff2");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body{
+  font-family: $font-family-body;
+  letter-spacing: 1px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $font-family-head;
+}
+//components
+@import "components/nav.scss";
+@import "components/button.scss";
+@import "components/forms.scss";
+@import "components/banner.scss";
