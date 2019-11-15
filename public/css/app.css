@@ -10768,9 +10768,11 @@ form .btn {
 }
 
 .guest .img-guest p {
-  font-size: 20px;
+  font-size: 15px;
   color: #ffeb04;
+  text-transform: uppercase;
   text-align: center;
   font-weight: 700;
+  font-family: "Modern Antiqua", cursive;
 }
 

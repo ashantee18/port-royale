@@ -99,7 +99,7 @@
               </div>
               <div class="col-md-4 left">
                 <div class="img-guest smaller dip">
-                  <p>Know Before You Go</p>
+                  <p>Know Before <br> You Go</p>
                 </div>
                 <div class="img-guest smaller dip">
                   <p>Activities & Events</p>
