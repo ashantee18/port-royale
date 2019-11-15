@@ -20,8 +20,23 @@ body{
 h1,h2,h3,h4,h5,h6{
   font-family: $font-family-head;
 }
+.content{
+  background: #f1f1f1;
+  padding: 60px 0;
+  .intro{
+    h1,h2,h3,h4,p{
+      text-align: center;
+    }
+    margin: 40px 0;
+  }
+}
+
+.guest{
+  margin-top: 50px;
+}
 //components
 @import "components/nav.scss";
 @import "components/button.scss";
 @import "components/forms.scss";
 @import "components/banner.scss";
+@import "components/images.scss";

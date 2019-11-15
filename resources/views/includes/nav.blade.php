@@ -4,13 +4,17 @@
       <div class="col-md">
         <div class="nav-contact-contents">
           <div class="nav-icon-con">
-            <i class="icon-phone icons"></i>&nbsp;777-7777
+            <p><i class="icon-phone icons"></i>&nbsp;(035) 527 5650</p>
           </div>
           <div class="nav-icon-con">
-            <i class="icon-location-pin icons"></i>&nbsp;Asdfghjkl City
+            <p>
+              <i class="icon-location-pin icons"></i>&nbsp;Dumaguete City
+            </p>
           </div>
           <div class="nav-icon-con">
-            <i class="icon-envelope icons"></i>&nbsp;asdfghjkl@gmail.com
+            <p>
+              <i class="icon-envelope icons"></i>&nbsp;portroyalewaterpark@gmail.com
+            </p> 
           </div>
         </div>
       </div>
@@ -41,10 +45,10 @@
         <a class="nav-link" href="#">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Tariff</a>
+        <a class="nav-link" href="#">Rooms</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">News/Events</a>
+        <a class="nav-link" href="#">News and Events</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Contact Us</a>

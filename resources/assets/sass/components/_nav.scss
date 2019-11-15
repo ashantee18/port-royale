@@ -2,12 +2,15 @@
   height: auto;
   .nav-contact-contents{
     margin: 10px;
+    display: inline-block;
     .nav-icon-con{
       margin: 0 10px;
       width: auto;
       float: left;
       i{
         font-size: 15px;
+        float: left;
+        margin-top: 4px;
       }
     }
     &.right{
@@ -19,6 +22,9 @@
         margin: 0 10px;
         font-size: 15px;
       }
+    }
+    p{
+      margin: 0;
     }
   }
 
