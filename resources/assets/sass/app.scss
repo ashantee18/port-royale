@@ -27,12 +27,47 @@ h1,h2,h3,h4,h5,h6{
     h1,h2,h3,h4,p{
       text-align: center;
     }
+    h1{
+      font-size: 36px;
+    }
+    p{
+      font-size: 17px;
+    }
     margin: 40px 0;
   }
 }
 
 .guest{
   margin-top: 50px;
+}
+.footer{
+  background-color: $blue;
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  ul{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    li{
+      list-style-type: none;
+      padding: 0 15px;
+      a{
+        color: #fff;
+      }
+    }
+  }
+  hr{
+    border-top: 1px solid rgba(222, 226, 230, 0.1);
+  }
+  p{
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+  }
 }
 //components
 @import "components/nav.scss";

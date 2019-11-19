@@ -42,8 +42,9 @@
         interactive water creation and brand new facilities.
         <br><br>
         A true ensemble of old tales and the new age,
-      </p>
-      <h2>You are in for a treat!</h2>
+      </p><br>
+      <hr>
+      <h1>You are in for a treat!</h1>
     </div>
     <div class="treat">
       <div class="row">
@@ -113,6 +114,11 @@
         </div>
       </div>
     </div>
+    <hr>
+    <div class="intro">
+      <h1>Adventure Awaits you...</h1>
+    </div>
   </div>
 </div>
+@include('includes.footer')
 @stop
