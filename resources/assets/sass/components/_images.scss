@@ -8,6 +8,14 @@
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto;
+    border: 2px solid #fff;
+  }
+}
+.s-imgs{
+  margin: 15px 0;
+  .s-img{
+    max-height: 200px;
+      object-fit: cover;
   }
 }
 
@@ -25,19 +33,38 @@
   .img-guest{
     min-height: 207px;
     max-height: 207px;
-    object-fit: cover;
+    object-fit: contain;
     justify-content: center;
     align-items: center;
     height: 100%;
     display: flex;
+    background-size: cover!important;
     &.dip{
-      background: linear-gradient(rgba(36, 74, 87, 0.8), rgba(36, 74, 87, 0.6)), url(/img/1.jpg);
+      background: linear-gradient(rgba(36, 74, 87, 0.8), rgba(36, 74, 87, 0.6)), url(/img/home/services/1.jpg);
     }
     &.dine{
-      background: linear-gradient(rgba(36, 74, 87, 0.8), rgba(36, 74, 87, 0.6)), url(/img/2.jpg);
+      background: linear-gradient(rgba(36, 74, 87, 0.8), rgba(36, 74, 87, 0.6)), url(/img/home/services/2.jpg);
     }
     &.stay{
-      background: linear-gradient(rgba(36, 74, 87, 0.8), rgba(36, 74, 87, 0.6)), url(/img/3.jpg);
+      background: linear-gradient(rgba(36, 74, 87, 0.8), rgba(36, 74, 87, 0.6)), url(/img/home/services/2.jpg);
+      margin-top: 10px;
+    }
+    &.celeb{
+      background: linear-gradient(rgba(36, 74, 87, 0.8), rgba(36, 74, 87, 0.6)), url(/img/home/services/4.jpg);
+    }
+    &.tag{
+      background: linear-gradient(rgba(36, 74, 87, 0.8), rgba(36, 74, 87, 0.6)), url(/img/home/services/5.jpg);
+      margin-top: 10px;
+    }
+    &.know{
+      background: linear-gradient(rgba(36, 74, 87, 0.8), rgba(36, 74, 87, 0.6)), url(/img/home/services/6.jpg);
+    }
+    &.act{
+      background: linear-gradient(rgba(36, 74, 87, 0.8), rgba(36, 74, 87, 0.6)), url(/img/home/services/7.jpg);
+      margin-top: 10px;
+    }
+    &.transpo{
+      background: linear-gradient(rgba(36, 74, 87, 0.8), rgba(36, 74, 87, 0.6)), url(/img/home/services/8.jpg);
       margin-top: 10px;
     }
     &.bigger{
@@ -66,4 +93,32 @@
       font-family: $font-family-head;
     }
   }
+}
+.rental{
+  .card{
+    -webkit-box-shadow: 10px 10px 10px -8px rgba(173,173,173,1);
+    -moz-box-shadow: 10px 10px 10px -8px rgba(173,173,173,1);
+    box-shadow: 10px 10px 10px -8px rgba(173,173,173,1);
+  }
+  .card-title{
+    min-height: 45px;
+  }
+  .card-img-top{
+    width: 100%;
+  max-height: 210px;
+  min-height: 210px;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  object-fit: cover;
+  }
+  .card-body{
+    max-height: 350px;
+    min-height: 350px;
+    p{
+      span{
+        min-height: 120px;
+      }
+    }
+  }
+
 }

@@ -8,6 +8,29 @@
     height: 100vh;
     display: table;
     width: 100%;
+    h1{
+      color:#fff;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &.about-banner{
+      background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0 , 0, 0, 0.5)), url(/img/about.jpg) bottom!important;
+    }
+    &.service-banner{
+      background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0 , 0, 0, 0.5)), url(/img/home/10.jpg) bottom!important;
+    }
+    &.contact-banner{
+      background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0 , 0, 0, 0.5)), url(/img/home/7.jpg) center!important;
+    }
+    &.room-banner{
+      background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0 , 0, 0, 0.5)), url(/img/hotel/2.jpg) bottom!important;
+    }
+    &.news-banner{
+      background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0 , 0, 0, 0.7)), url(/img/services/1e.jpg) center!important;
+    }
     .banner-content{
       height: 70vh;
       display: flex;
@@ -34,6 +57,7 @@
     @media( max-width : 991px ){
       height: auto;
     }
+
   }
   @media( max-width : 991px ){
     height: auto;

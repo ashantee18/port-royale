@@ -20,6 +20,22 @@ body{
 h1,h2,h3,h4,h5,h6{
   font-family: $font-family-head;
 }
+.mapouter{
+  position:relative;
+  text-align:right;
+  height:400px;
+  width:100%;
+  margin: 0 auto;
+  display: block;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:400px;
+  width:100%;
+  margin: 0 auto;
+  display: block;
+}
 .content{
   background: #f1f1f1;
   padding: 60px 0;
@@ -29,15 +45,63 @@ h1,h2,h3,h4,h5,h6{
     }
     h1{
       font-size: 36px;
+      color: $logored;
     }
     p{
       font-size: 17px;
     }
     margin: 40px 0;
   }
+  &.gcontent{
+    background: #fff;
+  }
+  &.b-content{
+    background: $lblue;
+    h1{
+      color: #fff;
+      margin-bottom: 30px;
+    }
+  }
+  &.o-content{
+    background: $lorange;
+    h1{
+      color: #fff;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .guest{
+  margin-top: 50px;
+}
+.icon-contact{
+  border: 1px solid;
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  i{
+    font-size: 30px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  }
+}
+.contact-deets{
+  text-align: center;
+}
+.item-center{
+  height: 100%;
+    display: flex;
+    align-items: center;
+}
+.c-map{
   margin-top: 50px;
 }
 .footer{
@@ -69,9 +133,41 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 10px;
   }
 }
+.hotel-deets{
+  font-size: 17px;
+}
+.details{
+  p{
+    font-size: 17px;
+  }
+}
 //components
 @import "components/nav.scss";
 @import "components/button.scss";
 @import "components/forms.scss";
 @import "components/banner.scss";
+@import "components/swiper.scss";
 @import "components/images.scss";
+
+
+h1{
+  font-size: 38px!important;
+}
+h2{
+  font-size: 37px!important;
+}
+h3{
+  font-size: 35px!important;
+}
+h4{
+  font-size: 34px!important;
+}
+h5{
+  font-size: 33px!important;
+}
+h6{
+  font-size: 32px!important;
+}
+p{
+  font-size: 19px;
+}

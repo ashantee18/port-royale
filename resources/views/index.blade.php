@@ -1,35 +1,7 @@
 @extends('includes.app')
 @section('content')
-<div class="banner">
-  <div class="banner-image">
-    <div class="container">
-      <div class="banner-content">
-      </div>
-      <!-- <div class="banner-book">
-        <form class="form-inline">
-          <div class="row">
-            <div class="col-md">
-              <label class="" for="">Check In</label>
-              <input type="date" class="form-control mb-2 mr-sm-2" id="">
-            </div>
-            <div class="col-md">
-              <label class="" for="">Check Out</label>
-              <input type="date" class="form-control mb-2 mr-sm-2" id="">
-            </div>
-            <div class="col-md">
-              <label class="" for="">Rooms</label>
-              <input type="text" class="form-control mb-2 mr-sm-2" id="">
-            </div>
-            <div class="col-md">
-              <label for="">&nbsp;</label>
-              <button type="submit" class="btn mb-2">Search</button>
-            </div>
-          </div>
-        </form>
-      </div> -->
-    </div>
-  </div>
-</div>
+@include('includes.banner')
+
 <div class="content">
   <div class="container">
     <div class="intro">
@@ -43,22 +15,29 @@
         <br><br>
         A true ensemble of old tales and the new age,
       </p><br>
-      <hr>
-      <h1>You are in for a treat!</h1>
     </div>
+  </div>
+</div>
+<div class="content b-content">
+  <div class="container">
+    <h1 class="text-center">You are in for a treat!</h1>
     <div class="treat">
       <div class="row">
         <div class="col-md">
-          <img src="{{ asset('/img/1.jpg') }}" alt="">
+          <img src="{{ asset('/img/home/c1.jpg') }}" alt="">
         </div>
         <div class="col-md">
-          <img src="{{ asset('/img/2.jpg') }}" alt="">
+          <img src="{{ asset('/img/home/c2.jpg') }}" alt="">
         </div>
         <div class="col-md">
-          <img src="{{ asset('/img/3.jpg') }}" alt="">
+          <img src="{{ asset('/img/home/c3.jpg') }}" alt="">
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="content">
+  <div class="container">
     <div class="intro">
       <h4>OPENING HOURS: 8:00AM TO 10:00PM</h4>
       <br>
@@ -72,51 +51,75 @@
           <div class="col-md">
             <div class="row">
               <div class="col-md-4 right">
-                <div class="img-guest dip">
-                  <p>Take a Dip</p>
-                </div>
+                <a href="{{ url('services#rental') }}">
+                  <div class="img-guest dip">
+                    <p>Take a Dip</p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-8 left">
-                <div class="img-guest dine">
-                  <p>Dine with us!</p>
-                </div>
+                <a href="{{ url('services#restaurant') }}">
+                  <div class="img-guest dine">
+                    <p>Dine with us!</p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-12">
-                <div class="img-guest stay">
-                  <p>Stay with us!</p>
-                </div>
+                <a href="{{ url('hotel') }}">
+                  <div class="img-guest stay">
+                    <p>Stay with us!</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
           <div class="col-md left">
             <div class="row">
               <div class="col-md-8 left right">
-                <div class="img-guest bigger dip">
-                  <p>Celebrate with us!</p>
-                </div>
-                <div class="img-guest smaller2 dip">
-                  <p>Tag us!</p>
-                </div>
+                <a href="{{ url('services#function') }}">
+                  <div class="img-guest bigger celeb">
+                    <p>Celebrate with us!</p>
+                  </div>
+                </a>
+                <a href="{{ url('contact') }}">
+                  <div class="img-guest smaller2 tag">
+                    <p>Tag us!</p>
+                  </div>
+                </a>
               </div>
               <div class="col-md-4 left">
-                <div class="img-guest smaller dip">
-                  <p>Know Before <br> You Go</p>
-                </div>
-                <div class="img-guest smaller dip">
-                  <p>Activities & Events</p>
-                </div>
-                <div class="img-guest smaller dip">
-                  <p>Transportation Service</p>
-                </div>
+                <a href="{{ url('') }}">
+                  <div class="img-guest smaller know">
+                    <p>Know Before <br> You Go</p>
+                  </div>
+                </a>
+                <a href="{{ url('news') }}">
+                  <div class="img-guest smaller act">
+                    <p>Activities & Events</p>
+                  </div>
+                </a>
+                <a href="{{ url('services#transpo') }}">
+                  <div class="img-guest smaller transpo">
+                    <p>Transportation Service</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <hr>
+  </div>
+</div>
+<div class="content o-content">
+  <div class="container">
     <div class="intro">
-      <h1>Adventure Awaits you...</h1>
+      <h1>Adventure awaits you...</h1>
+    </div>
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Port%20Royale%20WaterPark%20Sto.%20Ni%C3%B1o%20Drive%2C%20Mangnao%2C%20Dumaguete%20City%2C%20Negros%20Oriental%206200&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
     </div>
   </div>
 </div>
